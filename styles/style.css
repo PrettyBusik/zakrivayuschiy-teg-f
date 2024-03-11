@@ -13,8 +13,26 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font), sans-serif;
+  font-variation-settings: 'wght' var(--weight-main);
+  color: var(--font-color);
+  background-color: var(--bg-color);
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  background-image: repeating-linear-gradient(to right, var(--gradient), transparent 2px), repeating-linear-gradient(to bottom, var(--gradient-vert1) , var(--gradient-vert2) 2px);
+}
+
+.header{
+width:var(--width);
+  background-color: var(--bg-color);
+}
+
+.theme-menu__button:disabled::before{
+  content: '▶';
+  width: 14px;
+  height: 13px;
 }
