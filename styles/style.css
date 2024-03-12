@@ -64,10 +64,12 @@ width:var(--width);
 }
 
 .theme-menu__button{
+  position: relative;
   text-transform: uppercase;
   background-color: transparent;
   border: none;
   font-size: 0.87rem;
+  opacity: 1;
 }
 
 .theme-menu__button:disabled::before{
@@ -75,6 +77,42 @@ width:var(--width);
   width: 14px;
   height: 13px;
 }
+
+.theme-menu__button:disabled{
+  opacity: 0.6;
+  transition: opacity  0.3s ease;
+  pointer-events: none;
+}
+
+.theme-menu__button:hover{
+  opacity: 0.6;
+  transition: opacity  0.3s ease;
+  cursor: pointer;
+}
+
+.theme-menu__button:focus{
+  opacity: 0.6;
+  outline: none;
+}
+
+.theme-menu__button::after{
+  content: '';
+  display: block;
+  width: 0;
+  height:2px;
+  position: absolute;
+  top: 17px;
+  left: 0;
+  background-color: var(--font-color);
+  opacity: 1;
+}
+
+.theme-menu__button:focus-visible::after{
+  /*transform: scaleX(1);*/
+  width: 100%;
+  transition: width 0.3s;
+}
+
 
 .card{
   position: relative;
@@ -196,3 +234,4 @@ width: auto;
     padding: 18px 20px ;
   }
 }
+
