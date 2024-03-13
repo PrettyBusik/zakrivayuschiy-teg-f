@@ -202,6 +202,32 @@ left: 0;
   transition: outline 0.3s ease;
 }
 
+ .sparks{
+   opacity:0;
+ }
+
+
+.card__icon-button .core {
+  fill: transparent ;
+  transition: fill 0.3s 0.03s linear ;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--color-heart-contour);
+}
+
+.card__icon-button .main-body {
+  opacity:0;
+  fill: transparent;
+}
+
+.card__icon-button:hover .heart .main-body{
+  opacity: 1;
+  fill: var(--color-heart-contour);
+  transition: fill 0.3s 0.05s linear, opacity 0.3s  linear ;
+}
+
+
 .card__like-button{
   position: relative;
   background-color: transparent;

@@ -13,4 +13,8 @@
     --width:clamp(23.188rem, 16.035rem + 30.516vw, 43.5rem);
 
     --font-color-button-transform: #FFF;
+
+    --color-heart-contour:#000;
+    --color-heart-main-body:#FF0000;
+
 }
