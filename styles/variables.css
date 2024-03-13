@@ -11,4 +11,6 @@
     --gradient-vert1:#e7e7e7;
     --gradient-vert2:#1a1a1a;
     --width:clamp(23.188rem, 16.035rem + 30.516vw, 43.5rem);
+
+    --font-color-button-transform: #FFF;
 }
