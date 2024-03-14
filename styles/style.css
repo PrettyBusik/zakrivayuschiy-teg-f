@@ -252,13 +252,18 @@ left: 0;
 }
 
 .like-icon.is-liked .heart{
-  scale(1 ,1);
-  animation: scale-heart 1s   ;
+  animation: scale-heart 0.3s 0.1s ease-in alternate  ;
 }
 
 @keyframes scale-heart {
-  to{
-    scale(1.5 , 1.5);
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
   }
 }
 
@@ -267,7 +272,8 @@ left: 0;
   background-color: transparent;
   border: 2px solid var(--font-color);
  margin: 0;
-  padding: 8px 35px ;
+  padding: 7px 17px ;
+  inline-size:127px ;
 }
 
 .card__like-button:before{
