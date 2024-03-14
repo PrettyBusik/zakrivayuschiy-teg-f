@@ -176,11 +176,15 @@ left: 0;
   margin: 28px;
 }
 
+.card__text:last-child{
+  margin-block-end:0;
+}
+
 .buttons{
   display: flex;
   justify-content: end;
   align-items: center;
-  margin: -9px 25px 20px ;
+  margin:  25px;
   background-color: transparent;
   border: none;
 }
@@ -189,15 +193,15 @@ left: 0;
   background-color: transparent;
   border: none;
   display: flex;
-  padding: 6px;
-  outline: 2px solid transparent;
+  padding: 0;
+  margin-inline: 8px;
 }
 
 .card__icon-button:focus{
   outline: none;
+}
 
-
-}.card__icon-button:focus-visible{
+.card__icon-button:focus-visible{
    outline: 2px solid var(--font-color);
   transition: outline 0.3s ease;
 }
@@ -264,6 +268,16 @@ left: 0;
   }
   100%{
     transform: scale(1);
+  }
+}
+
+.like-icon.is-liked .sparks{
+  animation: sparks-heart 0.3s 0.3s ease-in alternate  ;
+}
+
+@keyframes sparks-heart {
+  to{
+    opacity: 1;
   }
 }
 
