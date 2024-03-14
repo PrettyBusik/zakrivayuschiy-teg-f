@@ -206,6 +206,11 @@ left: 0;
   transition: outline 0.3s ease;
 }
 
+
+.card__icon-button:hover .core {
+  fill: var(--color-heart-contour);
+}
+
  .sparks{
    opacity:0;
  }
@@ -215,19 +220,13 @@ left: 0;
   transition: fill 0.3s 0.03s linear ;
 }
 
-.card__icon-button:hover .core {
-  fill: var(--color-heart-contour);
-}
-
 .card__icon-button .main-body {
-  opacity:0;
   fill: transparent;
 }
 
 .card__icon-button:hover .main-body{
-  opacity: 1;
   fill: var(--color-heart-contour);
-  transition: fill 0.3s 0.05s linear, opacity 0.3s  linear ;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .card__icon-button:active .core {
@@ -276,7 +275,7 @@ left: 0;
 }
 
 @keyframes sparks-heart {
-  to{
+  100%{
     opacity: 1;
   }
 }
