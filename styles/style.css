@@ -141,7 +141,6 @@ left: 0;
 }
 
 .card__wrapper:before{
-  content: '</HTML>';
   position: absolute;
   top: 58px;
   right: 25px;
@@ -151,6 +150,34 @@ left: 0;
   opacity: 0.5;
   mix-blend-mode: hard-light;
   text-shadow:1px 1px var(--bg-color);
+}
+
+.card__wrapper.decor-el-1:before {
+  content: '</HTML>';
+}
+
+.card__wrapper.decor-el-2:before {
+  content: '</CSS>';
+}
+
+.card__wrapper.decor-el-3:before {
+  content: '<desigions>';
+}
+
+.card__wrapper.decor-el-4:before {
+  content: 'care';
+}
+
+.card__wrapper.decor-el-5:before {
+  content: '<support>';
+}
+
+.card__wrapper.decor-el-6:before {
+  content: '<lifes-style: none;>';
+}
+
+.card__wrapper.decor-el-7:before {
+  content: '<experience>';
 }
 
 @supports((text-stroke: 1px var(--bg-color)) or (-webkit-text-stroke: 1px var(--bg-color))) {
@@ -370,7 +397,7 @@ width: auto;
   height:21px;
   position: relative;
   z-index: 1;
-  /*color: var(--font-color-button-transform);*/
+  /*fill: var(--font-color-button-transform);*/
   /*mix-blend-mode: difference;*/
 }
 
