@@ -139,7 +139,7 @@ left: 0;
   font-family: "Inter", sans-serif;
   font-size: 1.125rem;
 }
-
+/* стили для декоративных надписей на картинке*/
 .card__wrapper:before{
   position: absolute;
   top: 58px;
@@ -150,6 +150,7 @@ left: 0;
   opacity: 0.5;
   mix-blend-mode: hard-light;
   text-shadow:1px 1px var(--bg-color);
+  z-index: 1;
 }
 
 .card__wrapper.decor-el-1:before {
@@ -180,6 +181,7 @@ left: 0;
   content: '<experience>';
 }
 
+
 @supports((text-stroke: 1px var(--bg-color)) or (-webkit-text-stroke: 1px var(--bg-color))) {
   .card__wrapper:before{
     -webkit-text-stroke: 1px var(--bg-color);
@@ -187,6 +189,7 @@ left: 0;
     text-shadow: none;
   }
 }
+
 
 .card__title{
   font-variation-settings: 'wght' var(--weight-title);
@@ -201,6 +204,35 @@ left: 0;
   object-position: center;
   border-top: 2px solid var(--font-color);
   border-bottom: 2px solid var(--font-color);
+}
+
+.filter-1{
+  filter: grayscale(0.7);
+}
+
+.filter-2{
+  filter: saturate(5);
+}
+
+.filter-3{
+  filter: saturate(3) sepia(0.5);
+}
+
+.filter-4{
+  filter: invert(0.8);
+}
+
+
+.filter-5{
+  filter: blur(10px);
+}
+
+.filter-6{
+  filter: hue-rotate(45deg);
+}
+
+.filter-7{
+  filter: sepia(0.5);
 }
 
 .card__text{
