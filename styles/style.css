@@ -23,9 +23,9 @@
   background-position: center;
   background-attachment: scroll;
   background-size: cover;
-/*  background-image: repeating-linear-gradient(to right, var(--gradient), transparent  2px),*/
-/*  repeating-linear-gradient(to bottom, var(--gradient), transparent 2px),*/
-/*linear-gradient(var(--gradient-vert1)  0.01% , var(--gradient-vert2) );*/
+  background-image: repeating-linear-gradient(to right, var(--gradient), transparent  2px),
+  repeating-linear-gradient(to bottom, var(--gradient), transparent 2px),
+linear-gradient(var(--gradient-vert1)  0.01% , var(--gradient-vert2) );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,7 +39,7 @@ width:var(--width);
   text-transform: uppercase;
   font-family: "PressStart2P", sans-serif;
   font-weight: var(--weight-main);
-  margin: 102px auto 104px;
+  margin: 102px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,6 +138,18 @@ left: 0;
   border: 2px solid var(--font-color);
   font-family: "Inter", sans-serif;
   font-size: 1.125rem;
+}
+
+.label{
+  position: absolute;
+  top: 58px;
+  right: 25px;
+  font-size: 0.875rem;
+  font-family: "PressStart2P", sans-serif;
+  color: var(--font-color);
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+  text-shadow:1px 1px var(--bg-color);
 }
 /* стили для декоративных надписей на картинке*/
 .card__wrapper:before{
@@ -492,3 +504,6 @@ width: auto;
   }
 }
 
+.dialog {
+  font-family: "PressStart2P",sans-serif;
+}
