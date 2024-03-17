@@ -47,8 +47,7 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="cards">
+    <main class="content">
         <article class="card">
           <h3 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h3>
             <div class="image-wrapper">
@@ -264,30 +263,27 @@
           <button class="card__like-button" type="button"><span class="button__text">Like</span></button>
         </div>
       </article>
-      </div>
-      <div>
+      <div class="content-button">
         <button class="save-button" onclick="window['dialog'].showModal()" type="button" aria-controls="dialog">
-          <svg class="save-button__element" width="21" height="21" viewBox="0 0 39 39" >
+          <svg class="save-button__svg" width="21" height="21" viewBox="0 0 39 39" >
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
           <span class=" button__text">
           Сохранить на память
         </span>
         </button>
-
-        <dialog id="dialog" class="dialog">
-          <div class="dialog-description">
-            <div>
-              <svg class=" dialog save-button__element"  width="39" height="39" viewBox="0 0 39 39">
-                <use href="./svg/floppy.svg#floppy"></use>
-              </svg>
-            </div>
-            <h3 class="dialog__description-text">Вставьте
-              дискету,чтобы продолжить</h3>
-          </div>
-          <button class="dialog save-button" type="button" onclick="window['dialog'].close()"><span class="button__text">OK</span></button>
-        </dialog>
       </div>
+      <dialog id="dialog" class="dialog">
+      <div class="dialog-description">
+        <div>
+          <svg class=" dialog save-button__svg" width="39" height="39" viewBox="0 0 39 39">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+        </div>
+        <h3 class="dialog__description-text">Вставьте дискету,чтобы продолжить</h3>
+      </div>
+      <button class="dialog save-button" type="button" onclick="window['dialog'].close()"><span class="button__text">OK</span></button>
+    </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>

@@ -23,9 +23,7 @@
   background-position: center;
   background-attachment: scroll;
   background-size: cover;
-/*  background-image: repeating-linear-gradient(to right, var(--gradient), transparent  2px),*/
-/*  repeating-linear-gradient(to bottom, var(--gradient), transparent 2px),*/
-/*linear-gradient(var(--gradient-vert1)  0.01% , var(--gradient-vert2) );*/
+  background-image: var(--gradient1);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,10 +123,11 @@ left: 0;
   transition: transform 0.3s, opacity 0.3s;
 }
 
-.cards{
+.content{
   display: flex;
   flex-direction: column;
   gap:49px ;
+  align-items: center;
 }
 
 .card{
@@ -387,7 +386,6 @@ left: 0;
   gap: 8px;
   justify-content: center;
   align-items: center;
-  margin: 50px;
   padding:15px 21px ;
   background-color: var(--bg-color);
 width: auto;
@@ -405,7 +403,7 @@ width: auto;
   transform-origin: left;
 }
 
-.save-button__element{
+.save-button__svg{
   width:21px;
   height:21px;
   position: relative;
@@ -448,7 +446,7 @@ dialog::backdrop{
 
 }
 
-.dialog .save-button__element{
+.dialog .save-button__svg{
   width: 39px;
   height: 39px;
 }
@@ -472,7 +470,7 @@ dialog::backdrop{
     flex-direction: column;
   }
 
-  .save-button__element{
+  .save-button__svg{
     width: 29px;
     height: 29px;
   }

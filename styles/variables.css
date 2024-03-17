@@ -17,4 +17,13 @@
     --color-heart-contour:#000;
     --color-heart-main-body:#FF0000;
 
+    --gradient1: repeating-linear-gradient(#d3d3d3,transparent 2px), repeating-linear-gradient( 90deg, #d3d3d3, transparent 2px), linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+
+/*repeating-linear-gradient(to right, var(--gradient), transparent  2px),*/
+/*repeating-linear-gradient(to bottom, var(--gradient), transparent 2px),*/
+/*linear-gradient(var(--gradient-vert1)  0.01% , var(--gradient-vert2) );*/
+
 }
+
+
+
