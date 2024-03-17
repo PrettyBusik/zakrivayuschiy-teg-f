@@ -5,72 +5,73 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
-:root.theme-dark{
+:root.theme-dark {
     --bg-color: #000;
-    --font-color:#00CC14;
+    --font-color: #00CC14;
     --weight-main: 465;
     --weight-title: 765;
 
-    --gradient:#000;
-    --gradient-vert1:#007f0c;
-    --gradient-vert2:#004306;
+    --gradient: #000;
+    --gradient-vert1: #007f0c;
+    --gradient-vert2: #004306;
 
     --font-color-button-transform: #00CC14;
 
-    --color-heart-contour:#00CC14;
+    --color-heart-contour: #00CC14;
 
 
 }
 
-:root.theme-light{
+:root.theme-light {
     --bg-color: #FFF;
-    --font-color:#000;
+    --font-color: #000;
     --weight-main: 400;
     --weight-title: 700;
 
-    --gradient:#d3d3d3;
-    --gradient-vert1:#e7e7e7;
-    --gradient-vert2:#1a1a1a;
+    --gradient: #d3d3d3;
+    --gradient-vert1: #e7e7e7;
+    --gradient-vert2: #1a1a1a;
 
     --font-color-button-transform: #FFF;
 
-    --color-heart-contour:#000;
+    --color-heart-contour: #000;
 
 
 }
 
 @media (prefers-color-scheme: light) {
-    :root{
+    :root {
         --bg-color: #FFF;
-        --font-color:#000;
+        --font-color: #000;
         --weight-main: 400;
         --weight-title: 700;
 
-        --gradient:#d3d3d3;
-        --gradient-vert1:#e7e7e7;
-        --gradient-vert2:#1a1a1a;
+        --gradient: #d3d3d3;
+        --gradient-vert1: #e7e7e7;
+        --gradient-vert2: #1a1a1a;
 
         --font-color-button-transform: #FFF;
 
-        --color-heart-contour:#000;
+        --color-heart-contour: #000;
 
 
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    :root{  --bg-color: #000;
-        --font-color:#00CC14;
+    :root {
+        --bg-color: #000;
+        --font-color: #00CC14;
         --weight-main: 465;
         --weight-title: 765;
 
-        --gradient:#000;
-        --gradient-vert1:#007f0c;
-        --gradient-vert2:#004306;
+        --gradient: #000;
+        --gradient-vert1: #007f0c;
+        --gradient-vert2: #004306;
 
         --font-color-button-transform: #00CC14;
 
-        --color-heart-contour:#00CC14;
+        --color-heart-contour: #00CC14;
 
 
     }
