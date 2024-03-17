@@ -23,9 +23,9 @@
   background-position: center;
   background-attachment: scroll;
   background-size: cover;
-  background-image: repeating-linear-gradient(to right, var(--gradient), transparent  2px),
-  repeating-linear-gradient(to bottom, var(--gradient), transparent 2px),
-linear-gradient(var(--gradient-vert1)  0.01% , var(--gradient-vert2) );
+/*  background-image: repeating-linear-gradient(to right, var(--gradient), transparent  2px),*/
+/*  repeating-linear-gradient(to bottom, var(--gradient), transparent 2px),*/
+/*linear-gradient(var(--gradient-vert1)  0.01% , var(--gradient-vert2) );*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -422,8 +422,13 @@ width: auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  border: none;
+  border: 2px solid var(--font-color);
   padding: 30px;
+}
+
+dialog::backdrop{
+  background-color: black;
+  opacity: 0.75;
 }
 
 .dialog-description{
@@ -433,11 +438,10 @@ width: auto;
 }
 
 .dialog__description-text{
- width: 234px;
-  padding-inline-end: 50px;
   color: var(--font-color);
-  font-family: "Press Start 2P", sans-serif;
-  font-size: 1.143rem;
+  font-family: var(--accent-font);
+  font-size: 0.875rem;
+  line-height: 150%;
   text-transform: uppercase;
 }
 
@@ -450,6 +454,7 @@ width: auto;
   width: 39px;
   height: 39px;
 }
+
 
 @media (width <= 375px) {
   .header,
@@ -467,7 +472,11 @@ width: auto;
 
   .footer__save-button{
     flex-direction: column;
-    padding: 18px 20px ;
+  }
+
+  .footer__save-button__element{
+    width: 29px;
+    height: 29px;
   }
 }
 
