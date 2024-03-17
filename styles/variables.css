@@ -16,8 +16,9 @@
 
     --color-heart-contour: #000;
     --color-heart-main-body: #FF0000;
-
-    --gradient1: repeating-linear-gradient(#d3d3d3, transparent 2px), repeating-linear-gradient(90deg, #d3d3d3, transparent 2px), linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    --bg-gradient-separator: #d3d3d3;
+    --bg-gradient-beginning:#e7e7e7;
+    --bg-gradient-end:#1a1a1a;
 
 }
 

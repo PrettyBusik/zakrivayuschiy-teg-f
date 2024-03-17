@@ -23,7 +23,10 @@
     background-position: center;
     background-attachment: scroll;
     background-size: cover;
-    background-image: var(--gradient1);
+    background-image: repeating-linear-gradient(var(--bg-gradient-separator), transparent 2px),
+    repeating-linear-gradient(90deg, var(--bg-gradient-separator), transparent 2px),
+    linear-gradient(var(--bg-gradient-beginning) 0.01%, var(--bg-gradient-end));
+
     display: flex;
     flex-direction: column;
     justify-content: center;

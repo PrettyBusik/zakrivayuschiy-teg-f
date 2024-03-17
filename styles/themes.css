@@ -18,6 +18,9 @@
     --font-color-button-transform: #00CC14;
 
     --color-heart-contour: #00CC14;
+    --bg-gradient-separator: #000;
+    --bg-gradient-beginning: #007f0c;
+    --bg-gradient-end: #004306;
 
 
 }
@@ -35,6 +38,9 @@
     --font-color-button-transform: #FFF;
 
     --color-heart-contour: #000;
+    --bg-gradient-separator: #d3d3d3;
+    --bg-gradient-beginning: #e7e7e7;
+    --bg-gradient-end: #1a1a1a;
 
 
 }
@@ -53,6 +59,9 @@
         --font-color-button-transform: #FFF;
 
         --color-heart-contour: #000;
+        --bg-gradient-separator: #d3d3d3;
+        --bg-gradient-beginning: #e7e7e7;
+        --bg-gradient-end: #1a1a1a;
 
 
     }
@@ -72,8 +81,9 @@
         --font-color-button-transform: #00CC14;
 
         --color-heart-contour: #00CC14;
-
-
+        --bg-gradient-separator: #000;
+        --bg-gradient-beginning: #007f0c;
+        --bg-gradient-end: #004306;
     }
 
 }
