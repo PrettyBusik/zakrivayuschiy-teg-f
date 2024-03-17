@@ -265,30 +265,30 @@
         </div>
       </article>
       </div>
-    </main>
-    <footer class="footer">
-      <button class="footer__save-button" onclick="window['dialog'].showModal()" type="button" aria-controls="dialog">
-   <svg class="footer__save-button__element" width="21" height="21" viewBox="0 0 39 39" >
-     <use href="./svg/floppy.svg#floppy"></use>
-   </svg>
-        <span class=" button__text">
+      <div>
+        <button class="save-button" onclick="window['dialog'].showModal()" type="button" aria-controls="dialog">
+          <svg class="save-button__element" width="21" height="21" viewBox="0 0 39 39" >
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <span class=" button__text">
           Сохранить на память
         </span>
-      </button>
+        </button>
 
-      <dialog id="dialog" class="dialog">
-        <div class="dialog-description">
-          <div>
-            <svg class=" dialog footer__save-button__element"  width="39" height="39" viewBox="0 0 39 39">
-              <use href="./svg/floppy.svg#floppy"></use>
-            </svg>
+        <dialog id="dialog" class="dialog">
+          <div class="dialog-description">
+            <div>
+              <svg class=" dialog save-button__element"  width="39" height="39" viewBox="0 0 39 39">
+                <use href="./svg/floppy.svg#floppy"></use>
+              </svg>
+            </div>
+            <h3 class="dialog__description-text">Вставьте
+              дискету,чтобы продолжить</h3>
           </div>
-          <h3 class="dialog__description-text">Вставьте
-            дискету,чтобы продолжить</h3>
-        </div>
-        <button class="dialog footer__save-button" type="button" onclick="window['dialog'].close()">OK</button>
-      </dialog>
-    </footer>
+          <button class="dialog save-button" type="button" onclick="window['dialog'].close()"><span class="button__text">OK</span></button>
+        </dialog>
+      </div>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

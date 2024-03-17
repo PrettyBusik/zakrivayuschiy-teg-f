@@ -357,18 +357,15 @@ left: 0;
   transform-origin: left;
 }
 
-.footer{
-  margin-block-end: 105px;
-}
 
 .card__like-button:hover:before,
-.footer__save-button:hover:before{
+.ave-button:hover:before{
   transform: scaleX(1);
   transition: transform 0.5s ease-in-out;
 }
 
 .card__like-button:focus,
-.footer__save-button:focus{
+.save-button:focus{
   outline: none;
   box-shadow: 2px 2px 0 var(--font-color);
   transition: box-shadow 0.3s;
@@ -383,7 +380,7 @@ left: 0;
   mix-blend-mode: difference;
 }
 
-.footer__save-button{
+.save-button{
   position: relative;
   border: 2px solid var(--font-color);
   display: flex;
@@ -396,7 +393,7 @@ left: 0;
 width: auto;
 }
 
-.footer__save-button:before{
+.save-button:before{
   content: '';
   position: absolute;
   top: 0;
@@ -408,7 +405,7 @@ width: auto;
   transform-origin: left;
 }
 
-.footer__save-button__element{
+.save-button__element{
   width:21px;
   height:21px;
   position: relative;
@@ -445,12 +442,13 @@ dialog::backdrop{
   text-transform: uppercase;
 }
 
-.dialog .footer__save-button{
+.dialog .save-button{
   margin: 0;
   padding: 9px 17px;
+
 }
 
-.dialog .footer__save-button__element{
+.dialog .save-button__element{
   width: 39px;
   height: 39px;
 }
@@ -470,11 +468,11 @@ dialog::backdrop{
     inline-size: 130px;
   }
 
-  .footer__save-button{
+  .save-button{
     flex-direction: column;
   }
 
-  .footer__save-button__element{
+  .save-button__element{
     width: 29px;
     height: 29px;
   }
