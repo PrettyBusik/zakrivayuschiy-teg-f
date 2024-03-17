@@ -456,14 +456,9 @@ width: auto;
   .card{
     width: 100%;
   }
-  .card__wrapper:before{
+  .label{
     top: 77px;
     right: 11px;
-  }
-
-  .card__text{
-    margin-block: 25px;
-    padding-inline: 25px;
   }
 
   .card__like-button{
