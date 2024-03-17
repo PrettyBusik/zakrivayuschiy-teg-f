@@ -1,27 +1,23 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-:root{
-    --main-font:"Inter", sans-serif;
-    --accent-font:"PressStart2P", sans-serif;
-    --weight-main:400;
-    --weight-title:700;
+:root {
+    --main-font: "Inter", sans-serif;
+    --accent-font: "PressStart2P", sans-serif;
+    --weight-main: 400;
+    --weight-title: 700;
     --bg-color: #FFF;
-    --font-color:#000;
+    --font-color: #000;
 
-    --gradient:#d3d3d3;
-    --gradient-vert1:#e7e7e7;
-    --gradient-vert2:#1a1a1a;
-    --width:clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
+    --gradient: #d3d3d3;
+    --gradient-vert1: #e7e7e7;
+    --gradient-vert2: #1a1a1a;
+    --width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
 
     --font-color-button-transform: #FFF;
 
-    --color-heart-contour:#000;
-    --color-heart-main-body:#FF0000;
+    --color-heart-contour: #000;
+    --color-heart-main-body: #FF0000;
 
-    --gradient1: repeating-linear-gradient(#d3d3d3,transparent 2px), repeating-linear-gradient( 90deg, #d3d3d3, transparent 2px), linear-gradient(#e7e7e7 0.01%, #1a1a1a);
-
-/*repeating-linear-gradient(to right, var(--gradient), transparent  2px),*/
-/*repeating-linear-gradient(to bottom, var(--gradient), transparent 2px),*/
-/*linear-gradient(var(--gradient-vert1)  0.01% , var(--gradient-vert2) );*/
+    --gradient1: repeating-linear-gradient(#d3d3d3, transparent 2px), repeating-linear-gradient(90deg, #d3d3d3, transparent 2px), linear-gradient(#e7e7e7 0.01%, #1a1a1a);
 
 }
 
