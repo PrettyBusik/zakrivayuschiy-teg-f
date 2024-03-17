@@ -140,7 +140,7 @@ left: 0;
   font-size: 1.125rem;
 }
 
-.label{
+.label {
   position: absolute;
   top: 58px;
   right: 25px;
@@ -149,53 +149,11 @@ left: 0;
   color: var(--font-color);
   opacity: 0.5;
   mix-blend-mode: hard-light;
-  text-shadow:1px 1px var(--bg-color);
+  text-shadow: 1px 1px var(--bg-color);
 }
-/* стили для декоративных надписей на картинке*/
-.card__wrapper:before{
-  position: absolute;
-  top: 58px;
-  right: 25px;
-  font-size: 0.875rem;
-  font-family: "PressStart2P", sans-serif;
-  color: var(--font-color);
-  opacity: 0.5;
-  mix-blend-mode: hard-light;
-  text-shadow:1px 1px var(--bg-color);
-  z-index: 1;
-}
-
-.card__wrapper.decor-el-1:before {
-  content: '</HTML>';
-}
-
-.card__wrapper.decor-el-2:before {
-  content: '</CSS>';
-}
-
-.card__wrapper.decor-el-3:before {
-  content: '<desigions>';
-}
-
-.card__wrapper.decor-el-4:before {
-  content: 'care';
-}
-
-.card__wrapper.decor-el-5:before {
-  content: '<support>';
-}
-
-.card__wrapper.decor-el-6:before {
-  content: '<lifes-style: none;>';
-}
-
-.card__wrapper.decor-el-7:before {
-  content: '<experience>';
-}
-
 
 @supports((text-stroke: 1px var(--bg-color)) or (-webkit-text-stroke: 1px var(--bg-color))) {
-  .card__wrapper:before{
+  .label{
     -webkit-text-stroke: 1px var(--bg-color);
     text-stroke: 1px var(--bg-color);
     text-shadow: none;
