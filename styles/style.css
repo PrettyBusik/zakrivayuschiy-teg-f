@@ -23,9 +23,9 @@
   background-position: center;
   background-attachment: scroll;
   background-size: cover;
-  background-image: repeating-linear-gradient(to right, var(--gradient), transparent  2px),
-  repeating-linear-gradient(to bottom, var(--gradient), transparent 2px);
-repeating-linear-gradient(var(--gradient-vert1) 0 0.01% , var(--gradient-vert2) );
+/*  background-image: repeating-linear-gradient(to right, var(--gradient), transparent  2px),*/
+/*  repeating-linear-gradient(to bottom, var(--gradient), transparent 2px),*/
+/*linear-gradient(var(--gradient-vert1)  0.01% , var(--gradient-vert2) );*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -224,7 +224,7 @@ left: 0;
 
 
 .filter-5{
-  filter: blur(10px);
+  filter: blur(5px);
 }
 
 .filter-6{
@@ -408,7 +408,7 @@ left: 0;
   align-items: center;
   margin: 50px;
   padding:15px 21px ;
-  background-color: transparent;
+  background-color: var(--bg-color);
 width: auto;
 }
 
@@ -477,8 +477,13 @@ width: auto;
     right: 11px;
   }
 
-  .card__text:not(:last-child){
-    margin: 25px;
+  .card__text{
+    margin-block: 25px;
+    padding-inline: 25px;
+  }
+
+  .card__like-button{
+    inline-size: 130px;
   }
 
   .footer__save-button{
