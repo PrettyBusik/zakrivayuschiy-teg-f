@@ -219,13 +219,6 @@
     margin: 25px;
 }
 
-/*.card__text{*/
-/*  line-height: 21px; !* 116.667% *!*/
-/*  padding-inline: 22px;*/
-/*  margin-block-start: 29px;*/
-/*}*/
-
-
 .buttons {
     display: flex;
     justify-content: end;
@@ -360,7 +353,7 @@
 
 
 .card__like-button:hover:before,
-.ave-button:hover:before {
+.save-button:hover:before {
     transform: scaleX(1);
     transition: transform 0.5s ease-in-out;
 }
@@ -391,6 +384,8 @@
     padding: 15px 21px;
     background-color: var(--bg-color);
     width: 100%;
+    fill: var(--font-color-button-transform);
+    z-index: 5;
 }
 
 .save-button:before {
@@ -410,11 +405,16 @@
     height: 21px;
     position: relative;
     z-index: 1;
-    /*fill: var(--font-color-button-transform);*/
-    /*mix-blend-mode: difference;*/
+    fill: var(--font-color-button-transform);
+    mix-blend-mode: difference;
+}
+
+.content-button {
+    margin-block-end: 105px;
 }
 
 .dialog[open] {
+    background-color: var(--bg-color);
     max-width: 357px;
     display: flex;
     flex-direction: column;
@@ -461,7 +461,7 @@ dialog::backdrop {
     }
 
     .label {
-        top: 77px;
+        top: 60px;
         right: 11px;
     }
 
@@ -477,8 +477,4 @@ dialog::backdrop {
         width: 29px;
         height: 29px;
     }
-}
-
-.dialog {
-    font-family: "PressStart2P", sans-serif;
 }
