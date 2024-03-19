@@ -56,11 +56,16 @@
     font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
 }
 
+.header__theme-menu{
+
+    margin: 22px auto;
+}
+
 .theme-menu__list {
     display: flex;
     flex-direction: column;
-    gap: 11px;
-    margin: 23px auto;
+    gap: 10px;
+    padding-inline-start: 14px;
 }
 
 .theme-menu__button {
@@ -70,7 +75,6 @@
     border: none;
     font-size: 0.87rem;
     opacity: 1;
-    padding-inline-start: 14px;
 }
 
 .theme-menu__button:disabled {
