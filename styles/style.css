@@ -21,11 +21,9 @@
     color: var(--font-color);
     background-color: var(--bg-color);
     background-position: center;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
-    background-image: repeating-linear-gradient(var(--bg-gradient-separator), transparent 2px),
-    repeating-linear-gradient(90deg, var(--bg-gradient-separator), transparent 2px),
-    linear-gradient(var(--bg-gradient-beginning) 0.01%, var(--bg-gradient-end));
+    background-image: repeating-linear-gradient(var(--bg-gradient-separator), transparent 2px), repeating-linear-gradient(90deg, var(--bg-gradient-separator), transparent 2px), linear-gradient(var(--bg-gradient-beginning) 0.01%, var(--bg-gradient-end));
 
     display: flex;
     flex-direction: column;
@@ -77,22 +75,6 @@
     opacity: 0.6;
     transition: opacity 0.3s ease;
     pointer-events: none;
-}
-
-.theme-menu__button:disabled::before {
-    content: '▶';
-    position: absolute;
-    left: -6px;
-    animation: arrow 0.5s ease-in-out infinite alternate;
-}
-
-@keyframes arrow {
-    from {
-        left: -6px;
-    }
-    to {
-        left: 0;
-    }
 }
 
 .theme-menu__button:hover {
@@ -291,32 +273,6 @@
 .like-icon.is-liked .contour {
     fill: var(--color-heart-main-body);
     transition: fill 0.3s 0.06s;
-}
-
-.like-icon.is-liked .heart {
-    animation: scale-heart 0.3s 0.1s ease-in alternate;
-}
-
-@keyframes scale-heart {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.like-icon.is-liked .sparks {
-    animation: sparks-heart 0.3s 0.3s ease-in alternate;
-}
-
-@keyframes sparks-heart {
-    100% {
-        opacity: 1;
-    }
 }
 
 .like-icon .contour {
