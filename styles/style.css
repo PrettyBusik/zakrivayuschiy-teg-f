@@ -303,6 +303,11 @@
     transform: scaleX(0);
     transform-origin: left;
 }
+.card__icon-button,
+.card__like-button:hover,
+.save-button:hover{
+    cursor: pointer;
+}
 
 
 .card__like-button:hover:before,
