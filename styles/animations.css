@@ -16,10 +16,10 @@
 
 @keyframes arrow {
     from {
-        left: -12px;
+        left: -11px;
     }
     to {
-        left: -6px;
+        left: -7px;
     }
 }
 
@@ -44,7 +44,7 @@
 .theme-menu__button:disabled::before {
     content: '▶';
     position: absolute;
-    left: -6px;
+    left: -11px;
     animation: arrow 0.5s ease-in-out infinite alternate;
 }
 

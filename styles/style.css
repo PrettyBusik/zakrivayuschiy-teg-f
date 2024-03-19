@@ -422,8 +422,12 @@ dialog::backdrop {
         width: 100%;
     }
 
+    .theme-menu__list{
+        padding-inline-start:20px;
+    }
+
     .label {
-        top: 60px;
+        top: 55px;
         right: 11px;
     }
 
@@ -438,5 +442,11 @@ dialog::backdrop {
     .save-button__svg {
         width: 29px;
         height: 29px;
+    }
+
+    .dialog[open] {
+        max-width: 341px;
+        padding-inline: 40px;
+        padding-block: 30px;
     }
 }
