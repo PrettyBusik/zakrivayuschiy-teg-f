@@ -47,12 +47,12 @@
     align-items: center;
 }
 
-.header__title {
+.header__logo {
     font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
     margin: clamp(7.5rem, 7.148rem + 1.502vw, 8.5rem) clamp(0.875rem, -1.469rem + 10vw, 7.531rem) 20px;
 }
 
-.header__description {
+.header__title {
     font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
 }
 
@@ -448,5 +448,10 @@ dialog::backdrop {
         max-width: 341px;
         padding-inline: 40px;
         padding-block: 30px;
+    }
+
+
+    .content-button {
+        margin-block-end: 100px;
     }
 }
