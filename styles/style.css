@@ -306,6 +306,7 @@
     background-color: var(--font-color);
     transform: scaleX(0);
     transform-origin: left;
+    transition: transform 0.5s ease-in-out;
 }
 
 .card__icon-button,
@@ -361,6 +362,7 @@
     background-color: var(--font-color);
     transform: scaleX(0);
     transform-origin: left;
+    transition: transform 0.5s ease-in-out;
 }
 
 .save-button__svg {
