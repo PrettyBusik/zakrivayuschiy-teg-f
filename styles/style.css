@@ -23,8 +23,8 @@
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    background-image: repeating-linear-gradient(var(--bg-gradient-separator), transparent 2px),
-    repeating-linear-gradient(90deg, var(--bg-gradient-separator), transparent 2px),
+    background-image: repeating-linear-gradient(var(--bg-gradient-separator)  0 2px, transparent  2px 4px),
+    repeating-linear-gradient(90deg, var(--bg-gradient-separator) 0 2px, transparent   2px 4px),
     linear-gradient(var(--bg-gradient-beginning) 0.01%, var(--bg-gradient-end));
 
     display: flex;
