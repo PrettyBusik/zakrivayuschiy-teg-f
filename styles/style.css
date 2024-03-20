@@ -202,6 +202,10 @@
     margin: 25px;
 }
 
+.card__text{
+    line-height: 21px;
+}
+
 .buttons {
     display: flex;
     justify-content: end;
