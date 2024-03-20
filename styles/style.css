@@ -23,8 +23,8 @@
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    background-image: repeating-linear-gradient(var(--bg-gradient-separator)  0 2px, transparent  2px 4px),
-    repeating-linear-gradient(90deg, var(--bg-gradient-separator) 0 2px, transparent   2px 4px),
+    background-image: repeating-linear-gradient(var(--bg-gradient-separator) 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(90deg, var(--bg-gradient-separator) 0 2px, transparent 2px 4px),
     linear-gradient(var(--bg-gradient-beginning) 0.01%, var(--bg-gradient-end));
 
     display: flex;
@@ -117,7 +117,6 @@
 }
 
 .card {
-    position: relative;
     width: var(--width);
     background-color: var(--bg-color);
     border: 2px solid var(--font-color);
@@ -127,10 +126,10 @@
 
 .label {
     position: absolute;
-    top: 58px;
+    top: 25px;
     right: 25px;
     font-size: 0.875rem;
-    font-family:var(--accent-font), fantasy;
+    font-family: var(--accent-font), fantasy;
     color: var(--font-color);
     opacity: 0.5;
     mix-blend-mode: hard-light;
@@ -154,6 +153,7 @@
 }
 
 .image-wrapper {
+    position: relative;
     display: block;
     border-top: 2px solid var(--font-color);
     border-bottom: 2px solid var(--font-color);
@@ -430,7 +430,7 @@ dialog::backdrop {
     }
 
     .label {
-        top: 55px;
+        top: 20px;
         right: 11px;
     }
 
